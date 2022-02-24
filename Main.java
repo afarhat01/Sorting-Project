@@ -139,7 +139,7 @@ String[] words2 = {"strawberry", "banana", "apple", "watermelon", "fig", "cantel
       String temp = words2[j];
       int possibleIndex = j;
 			
-      while (possibleIndex > 0 && temp.substring(0, 1).compareTo(words2[possibleIndex-1].substring(0, 1)) > 0 )
+      while (possibleIndex > 0 && temp.substring(0, 1).compareTo(words2[possibleIndex-1].substring(0, 1)) < 0 )
       {
         words2[possibleIndex] = words2[possibleIndex - 1];
         possibleIndex--;
